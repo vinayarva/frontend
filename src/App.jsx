@@ -94,7 +94,7 @@ function App() {
     }
 
     try {
-      const response = await fetch("http://ec2-13-53-174-9.eu-north-1.compute.amazonaws.com:3000/", {
+      const response = await fetch("https://d11c-13-53-174-9.ngrok-free.app", {
         method: "POST",
         body: formData,
       });
