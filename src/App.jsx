@@ -52,7 +52,7 @@ function App() {
    
 
     try {
-      const response = await fetch("http://localhost:3000/upload", {
+      const response = await fetch("http://ec2-13-53-174-9.eu-north-1.compute.amazonaws.com:3000/", {
         method: "POST",
         body: formData,
      
