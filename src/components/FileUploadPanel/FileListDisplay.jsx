@@ -16,11 +16,11 @@ function FileListDisplay({ files, selectedFileId, onSelectFile }) {
               className={`w-full text-left px-3 py-2 text-sm transition-colors duration-150
                           ${selectedFileId === file.id ? 'bg-blue-500 text-white' : 'hover:bg-gray-100 text-gray-700'}`}
             >
-              <span className="font-medium">{file.fileName}</span>
-              {file.error && <span className="block text-xs text-red-500 truncate">Error: {file.error}</span>}
-              {!file.error && file.jsonData && <span className="block text-xs text-green-500">Processed successfully</span>}
-               {!file.error && !file.jsonData && file.isLoading && <span className="block text-xs text-yellow-500">Processing...</span>}
-               {!file.error && !file.jsonData && !file.isLoading && !file.error && <span className="block text-xs text-gray-400">Pending upload or issue</span>}
+              <span className="font-medium truncate block">{file.fileName}</span>
+              {file.isLoading && <span className="block text-xs text-yellow-600">Processing...</span>}
+              {file.error && <span className="block text-xs text-red-600 truncate">Error: {file.error}</span>}
+              {!file.isLoading && !file.error && file.jsonData && <span className="block text-xs text-green-600">Processed successfully</span>}
+              {!file.isLoading && !file.error && !file.jsonData && <span className="block text-xs text-gray-500">No data or not processed</span>}
             </button>
           </li>
         ))}

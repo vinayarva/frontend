@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 function LoadingIndicator({ text = "Processing..." }) {
@@ -27,5 +28,4 @@ function LoadingIndicator({ text = "Processing..." }) {
     </div>
   );
 }
-
 export default LoadingIndicator;

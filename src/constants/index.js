@@ -1,4 +1,4 @@
 export const VIEW_MODES = {
-  JSON: "json", 
+  JSON: "json",
   TABLE: "table",
 };

@@ -3,9 +3,11 @@ import React from 'react';
 function SuccessMessage({ message }) {
     if (!message) return null;
     return (
-        <p className="mt-4 text-sm text-green-700 bg-green-100 p-3 rounded-md">
+        // Ensure this component is styled appropriately if used globally (e.g., with absolute positioning in App.jsx)
+        // For now, basic styling suitable for inline use.
+        <div className="mt-4 p-3 bg-green-100 border border-green-300 text-green-700 rounded-md text-sm">
             {message}
-        </p>
+        </div>
     );
 }
 export default SuccessMessage;
