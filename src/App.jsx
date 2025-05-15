@@ -94,7 +94,7 @@ function App() {
     }
 
     try {
-      const response = await fetch("https://d11c-13-53-174-9.ngrok-free.app", {
+      const response = await fetch("https://backend-pdf-ai.onrender.com", {
         method: "POST",
         body: formData,
       });
