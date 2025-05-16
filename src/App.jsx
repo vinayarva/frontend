@@ -90,7 +90,7 @@ function App() {
     });
 
     if (customPrompt.trim() !== "") {
-      formData.append("prompt", customPrompt.trim());
+      formData.append("userPrompt", customPrompt.trim());
     }
 
     try {
